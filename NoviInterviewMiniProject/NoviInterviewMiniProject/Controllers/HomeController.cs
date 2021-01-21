@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NoviInterviewMiniProject.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,8 +9,16 @@ namespace NoviInterviewMiniProject.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IGlobalSettings _globalSettings;
+
+        public HomeController(IGlobalSettings globalSettings)
+        {
+            _globalSettings = globalSettings;
+        }
         public ActionResult Index()
         {
+            ViewBag.ApiUrl = _globalSettings.ApiUrl;
+
             return View();
         }
 
