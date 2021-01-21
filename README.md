@@ -24,7 +24,7 @@ Your project today will be to learn just enough about our API to make a call to 
 - Don't spend more than 2 hours!
 
 ### Bonus Ideas
-If you have time and want to bring some additional flair to project, here's a couple ideas, but feel free to add your own interesting feature as well!
+If you have time and want to bring some additional flair to the project, here's a couple ideas, but feel free to add your own interesting feature as well!
 - Allow user to filter records by group membership
 - Show an indicator of membership status and member since date
 - Show the image of members in the list
@@ -32,5 +32,6 @@ If you have time and want to bring some additional flair to project, here's a co
 ### Submitting Your Project
 For submitting your project, you can either -
 - Fork this to your own GitHub repo and send us the link
-- Send us a Zip file containing the full solution
+- Send us a Zip file containing the full solution.
+
 We're good either way!
