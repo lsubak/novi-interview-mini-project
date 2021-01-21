@@ -7,13 +7,11 @@ Our Novi AMS platform has an available external API that our integration partner
 
 Your project today will be to learn just enough about our API to make a call to pull some members and show them on a page. Our user stories internally are defined with acceptance criteria, so here's some acceptance criteria for this mini-project -
 
-### API Details
-- [Novi AMS API Reference](https://api-docs.noviams.com/)
-- We'll send you a URL and API Key to one of our testing APIs along with your email about the project. If you didn't get it - please ask! 
-
 ### Acceptance Criteria
 - Fork this repo as your starting point - we've setup a base solution for you to get you straight to the code.
-- Show a list of member records retrieved from the Novi AMS API
+	- The base solution has Bootstrap CSS & StructureMap dependency injection you can use if you want
+- Show a list of active ("Active" field = "true") member records retrieved from the Novi AMS API
+	- Don't worry about paging - our test data has less than 1000 records.
 - The list of records should show the following information at minimum - 
 	- Name 
 	- Customer Type (Company or Person)
@@ -23,6 +21,11 @@ Your project today will be to learn just enough about our API to make a call to 
 - Allow a user to filter the records by name
 - Follow best practices and SOLID principles as much as possible. This project is small so some of that may be overkill, but we'd like to see how you think through code architecture, readability, expandability, etc.
 - Don't spend more than a couple hours!
+
+### API Details
+- [Novi AMS API Reference](https://api-docs.noviams.com/)
+- We'll send you a URL and API Key to one of our testing APIs along with your email about the project. If you didn't get it - please ask! 
+- We answer questions about our API all the time - feel free to reach out if you have questions.
 
 ### Bonus Ideas
 If you have time and want to bring some additional flair to the project, here's a couple ideas, but feel free to add your own interesting feature as well!
