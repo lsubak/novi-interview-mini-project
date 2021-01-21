@@ -12,6 +12,7 @@ Your project today will be to learn just enough about our API to make a call to 
 - We'll send you a URL and API Key to one of our testing APIs along with your email about the project. If you didn't get it - please ask! 
 
 ### Acceptance Criteria
+- Fork this repo as your starting point - we've setup a base solution for you to get you straight to the code.
 - Show a list of member records retrieved from the Novi AMS API
 - The list of records should show the following information at minimum - 
 	- Name 
