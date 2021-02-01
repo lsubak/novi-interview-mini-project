@@ -28,12 +28,20 @@ namespace NoviInterviewMiniProject.Repositories
         public List<Member> GetData()
         {
             var data = new List<Member>();
+            try
+            {
+                string responseBody = _client.GetStringAsync($"{_globalSettings.ApiUrl}/members").Result;
 
-            string responseBody = _client.GetStringAsync($"{_globalSettings.ApiUrl}/members").Result;
+                var responseJson = JObject.Parse(responseBody);
 
-            var responseJson = JObject.Parse(responseBody);
-
-            data = responseJson.SelectToken("Results").ToObject<List<Member>>();
+                data = responseJson.SelectToken("Results").ToObject<List<Member>>();
+            }
+            catch (Exception e)
+            {
+                //Normally I like to have logging here (and lots of other places), and a way to return a nice error message to the user
+                //depending on the error. I'll skip that in the interest of time and lack of a good place to log things
+                throw e;
+            }
 
             return data;
         }
