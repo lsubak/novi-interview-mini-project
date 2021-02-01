@@ -1,0 +1,41 @@
+﻿@model List<NoviInterviewMiniProject.Models.ViewModels.MemberViewModel>
+
+@{
+    ViewBag.Title = "Member Info";
+}
+<h2>@ViewBag.Title</h2>
+
+@using (Html.BeginForm("Index", "Member"))
+{
+    <div class="form-inline">
+        <input class="form-control" type="text" name="searchQuery" placeholder="Search by name" />
+        <input class="btn btn-primary" type="submit" value="Search" />
+    </div>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Customer Type</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Mobile</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var member in Model)
+        {
+            if (member.Visible == true)
+            {
+                <tr>
+                    <th scope="row">@member.Name</th>
+                    <td>@member.CustomerType</td>
+                    <td>@member.Email</td>
+                    <td>@member.Phone</td>
+                    <td>@member.Mobile</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

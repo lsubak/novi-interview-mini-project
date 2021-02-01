@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30717.126
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoviInterviewMiniProject", "NoviInterviewMiniProject\NoviInterviewMiniProject.csproj", "{6C9671FB-4E48-4D5F-8762-7E5DE2BDF5B8}"
 EndProject
